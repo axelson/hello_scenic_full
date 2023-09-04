@@ -24,7 +24,10 @@ defmodule HelloScenicFull.MixProject do
   defp deps do
     [
       {:scenic, "~> 0.11.0"},
-      {:scenic_driver_local, "~> 0.11.0"},
+      # {:scenic, path: "~/dev/forks/scenic", override: true},
+      # {:scenic_driver_local, "~> 0.11.0"},
+      # {:scenic_driver_local, path: "~/dev/forks/scenic_driver_local", override: true},
+      {:scenic_driver_local, github: "ScenicFramework/scenic_driver_local", branch: "main", override: true},
       {:scenic_clock, "~> 0.11.0"}
     ]
   end
